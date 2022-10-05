@@ -1,6 +1,5 @@
 import PIXI from 'pixi.js';
 import LEAF from 'leaflet';
-import WinBox from 'winbox';
 
 import * as data from './data/geomapData.json';
 
@@ -29,5 +28,3 @@ LEAF.circleMarker([43.659752, -79.378161]).addTo(geomap)
 	)
 	.openPopup();
 
-	const ungabox = new WinBox('ungabunga');
-	ungabox.show();

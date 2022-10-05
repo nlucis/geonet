@@ -9,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "style": "cp node_modules/leaflet/dist/leaflet.css public/css/leaflet.css"
+    "cp:style": "cp node_modules/leaflet/dist/leaflet.css public/css/leaflet.css",
+    "cp:winbox": "cp node_modules/winbox/dist/winbox.bundle.min.js public/lib/winbox.js",
+    "cp:all": "yarn cp:style && yarn cp:winbox"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.9",
@@ -17,13 +19,11 @@
     "@rollup/plugin-replace": "^4.0.0",
     "@types/leaflet": "^1.8.0",
     "@types/node": "^18.8.2",
-    "@types/winbox": "^0.2.1",
     "typescript": "^4.8.4",
     "vite": "^3.1.4"
   },
   "dependencies": {
     "leaflet": "^1.9.2",
-    "pixi.js": "^6.5.5",
-    "winbox": "^0.2.6"
+    "pixi.js": "^6.5.5"
   }
 }

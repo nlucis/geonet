@@ -4,6 +4,8 @@
     <title>GEONET</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="preload" href="lib/winbox.js" as="script">
+
     <style>
       body {
         margin: 0;
@@ -13,7 +15,12 @@
         height: 100vh;
       }
     </style>
-    <script type="module" src="/src/index.ts"></script>
+    <!-- <script src="lib/winbox.js" async></script> -->
+    <script type="module">
+      import WinBox from 'winbox';
+      new WinBox('shee');
+    </script>
+    <script type="module" src="/src/index.ts" defer></script>
   </head>
   <body>
     <div id="geomap"></div>
