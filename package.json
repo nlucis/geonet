@@ -8,14 +8,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "style": "cp node_modules/leaflet/dist/leaflet.css public/css/leaflet.css"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-replace": "^4.0.0",
+    "@types/leaflet": "^1.8.0",
     "@types/node": "^18.8.2",
     "typescript": "^4.8.4",
     "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.2",
+    "pixi.js": "^6.5.5"
   }
 }
