@@ -12,8 +12,6 @@ const Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/tone
 	maxZoom: 18,
 	ext: 'png'
 });
-
-
 Stamen_Toner.addTo(geomap);
 
 // Adds a popup marker to the webmap for GGL address
