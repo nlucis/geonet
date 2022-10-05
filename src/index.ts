@@ -18,7 +18,7 @@ const Stamen_Toner = LEAF.tileLayer(data.tileURI,
 Stamen_Toner.addTo(geomap);
 
 // Adds a popup marker to the webmap for GGL address
-L.circleMarker([43.659752, -79.378161]).addTo(geomap)
+LEAF.circleMarker([43.659752, -79.378161]).addTo(geomap)
 	.bindPopup(
 		'MON 304<br>' + 
 		'Monetary Times Building<br>' +
