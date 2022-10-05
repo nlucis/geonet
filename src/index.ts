@@ -6,7 +6,7 @@ const geomap = L.map('geomap').setView([43.659752, -79.378161], 20);
 
 // Adds the basemap tiles to your web map
 // Additional providers are available at: https://leaflet-extras.github.io/leaflet-providers/preview/
-const Stamen_Toner = L.tileLayer(data.mapdataURI, 
+const Stamen_Toner = L.tileLayer(data.tileURI, 
 	{
 		attribution: data.attribution,
 		subdomains: 'abcd',
